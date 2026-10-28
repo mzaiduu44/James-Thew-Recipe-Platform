@@ -1,0 +1,1307 @@
+﻿{
+    "openapi":  "3.0.4",
+    "info":  {
+                 "title":  "E-Project",
+                 "version":  "1.0"
+             },
+    "paths":  {
+                  "/api/Announcement":  {
+                                            "get":  {
+                                                        "tags":  [
+                                                                     "Announcement"
+                                                                 ],
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK}"
+                                                                      }
+                                                    },
+                                            "post":  {
+                                                         "tags":  [
+                                                                      "Announcement"
+                                                                  ],
+                                                         "requestBody":  {
+                                                                             "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                         },
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     }
+                                        },
+                  "/api/Announcement/{id}":  {
+                                                 "get":  {
+                                                             "tags":  [
+                                                                          "Announcement"
+                                                                      ],
+                                                             "parameters":  [
+                                                                                "@{name=id; in=path; required=True; schema=}"
+                                                                            ],
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK}"
+                                                                           }
+                                                         },
+                                                 "put":  {
+                                                             "tags":  [
+                                                                          "Announcement"
+                                                                      ],
+                                                             "parameters":  [
+                                                                                "@{name=id; in=path; required=True; schema=}"
+                                                                            ],
+                                                             "requestBody":  {
+                                                                                 "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                             },
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK}"
+                                                                           }
+                                                         },
+                                                 "delete":  {
+                                                                "tags":  [
+                                                                             "Announcement"
+                                                                         ],
+                                                                "parameters":  [
+                                                                                   "@{name=id; in=path; required=True; schema=}"
+                                                                               ],
+                                                                "responses":  {
+                                                                                  "200":  "@{description=OK}"
+                                                                              }
+                                                            }
+                                             },
+                  "/api/Auth":  {
+                                    "post":  {
+                                                 "tags":  [
+                                                              "Auth"
+                                                          ],
+                                                 "requestBody":  {
+                                                                     "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                 },
+                                                 "responses":  {
+                                                                   "200":  "@{description=OK}"
+                                                               }
+                                             }
+                                },
+                  "/api/Category":  {
+                                        "get":  {
+                                                    "tags":  [
+                                                                 "Category"
+                                                             ],
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK; content=}"
+                                                                  }
+                                                },
+                                        "post":  {
+                                                     "tags":  [
+                                                                  "Category"
+                                                              ],
+                                                     "requestBody":  {
+                                                                         "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                     },
+                                                     "responses":  {
+                                                                       "200":  "@{description=OK}"
+                                                                   }
+                                                 }
+                                    },
+                  "/api/Category/{id}":  {
+                                             "get":  {
+                                                         "tags":  [
+                                                                      "Category"
+                                                                  ],
+                                                         "parameters":  [
+                                                                            "@{name=id; in=path; required=True; schema=}"
+                                                                        ],
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     },
+                                             "put":  {
+                                                         "tags":  [
+                                                                      "Category"
+                                                                  ],
+                                                         "parameters":  [
+                                                                            "@{name=id; in=path; required=True; schema=}"
+                                                                        ],
+                                                         "requestBody":  {
+                                                                             "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                         },
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     },
+                                             "delete":  {
+                                                            "tags":  [
+                                                                         "Category"
+                                                                     ],
+                                                            "parameters":  [
+                                                                               "@{name=id; in=path; required=True; schema=}"
+                                                                           ],
+                                                            "responses":  {
+                                                                              "200":  "@{description=OK}"
+                                                                          }
+                                                        }
+                                         },
+                  "/api/Contest":  {
+                                       "get":  {
+                                                   "tags":  [
+                                                                "Contest"
+                                                            ],
+                                                   "responses":  {
+                                                                     "200":  "@{description=OK}"
+                                                                 }
+                                               },
+                                       "post":  {
+                                                    "tags":  [
+                                                                 "Contest"
+                                                             ],
+                                                    "requestBody":  {
+                                                                        "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                    },
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK}"
+                                                                  }
+                                                }
+                                   },
+                  "/api/Contest/{id}":  {
+                                            "get":  {
+                                                        "tags":  [
+                                                                     "Contest"
+                                                                 ],
+                                                        "parameters":  [
+                                                                           "@{name=id; in=path; required=True; schema=}"
+                                                                       ],
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK}"
+                                                                      }
+                                                    },
+                                            "put":  {
+                                                        "tags":  [
+                                                                     "Contest"
+                                                                 ],
+                                                        "parameters":  [
+                                                                           "@{name=id; in=path; required=True; schema=}"
+                                                                       ],
+                                                        "requestBody":  {
+                                                                            "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                        },
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK}"
+                                                                      }
+                                                    },
+                                            "delete":  {
+                                                           "tags":  [
+                                                                        "Contest"
+                                                                    ],
+                                                           "parameters":  [
+                                                                              "@{name=id; in=path; required=True; schema=}"
+                                                                          ],
+                                                           "responses":  {
+                                                                             "200":  "@{description=OK}"
+                                                                         }
+                                                       }
+                                        },
+                  "/api/ContestSubmission":  {
+                                                 "get":  {
+                                                             "tags":  [
+                                                                          "ContestSubmission"
+                                                                      ],
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK; content=}"
+                                                                           }
+                                                         },
+                                                 "post":  {
+                                                              "tags":  [
+                                                                           "ContestSubmission"
+                                                                       ],
+                                                              "requestBody":  {
+                                                                                  "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                              },
+                                                              "responses":  {
+                                                                                "200":  "@{description=OK}"
+                                                                            }
+                                                          }
+                                             },
+                  "/api/ContestSubmission/{id}":  {
+                                                      "get":  {
+                                                                  "tags":  [
+                                                                               "ContestSubmission"
+                                                                           ],
+                                                                  "parameters":  [
+                                                                                     "@{name=id; in=path; required=True; schema=}"
+                                                                                 ],
+                                                                  "responses":  {
+                                                                                    "200":  "@{description=OK; content=}"
+                                                                                }
+                                                              },
+                                                      "delete":  {
+                                                                     "tags":  [
+                                                                                  "ContestSubmission"
+                                                                              ],
+                                                                     "parameters":  [
+                                                                                        "@{name=id; in=path; required=True; schema=}"
+                                                                                    ],
+                                                                     "responses":  {
+                                                                                       "200":  "@{description=OK; content=}"
+                                                                                   }
+                                                                 }
+                                                  },
+                  "/api/ContestSubmission/winner/{submissionId}":  {
+                                                                       "put":  {
+                                                                                   "tags":  [
+                                                                                                "ContestSubmission"
+                                                                                            ],
+                                                                                   "parameters":  [
+                                                                                                      "@{name=submissionId; in=path; required=True; schema=}"
+                                                                                                  ],
+                                                                                   "responses":  {
+                                                                                                     "200":  "@{description=OK}"
+                                                                                                 }
+                                                                               }
+                                                                   },
+                  "/api/FAQ":  {
+                                   "get":  {
+                                               "tags":  [
+                                                            "FAQ"
+                                                        ],
+                                               "responses":  {
+                                                                 "200":  "@{description=OK}"
+                                                             }
+                                           },
+                                   "post":  {
+                                                "tags":  [
+                                                             "FAQ"
+                                                         ],
+                                                "requestBody":  {
+                                                                    "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                },
+                                                "responses":  {
+                                                                  "200":  "@{description=OK}"
+                                                              }
+                                            }
+                               },
+                  "/api/FAQ/{id}":  {
+                                        "get":  {
+                                                    "tags":  [
+                                                                 "FAQ"
+                                                             ],
+                                                    "parameters":  [
+                                                                       "@{name=id; in=path; required=True; schema=}"
+                                                                   ],
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK}"
+                                                                  }
+                                                },
+                                        "put":  {
+                                                    "tags":  [
+                                                                 "FAQ"
+                                                             ],
+                                                    "parameters":  [
+                                                                       "@{name=id; in=path; required=True; schema=}"
+                                                                   ],
+                                                    "requestBody":  {
+                                                                        "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                    },
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK}"
+                                                                  }
+                                                },
+                                        "delete":  {
+                                                       "tags":  [
+                                                                    "FAQ"
+                                                                ],
+                                                       "parameters":  [
+                                                                          "@{name=id; in=path; required=True; schema=}"
+                                                                      ],
+                                                       "responses":  {
+                                                                         "200":  "@{description=OK}"
+                                                                     }
+                                                   }
+                                    },
+                  "/api/Feedback":  {
+                                        "get":  {
+                                                    "tags":  [
+                                                                 "Feedback"
+                                                             ],
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK}"
+                                                                  }
+                                                },
+                                        "post":  {
+                                                     "tags":  [
+                                                                  "Feedback"
+                                                              ],
+                                                     "requestBody":  {
+                                                                         "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                     },
+                                                     "responses":  {
+                                                                       "200":  "@{description=OK}"
+                                                                   }
+                                                 }
+                                    },
+                  "/api/Feedback/{id}":  {
+                                             "get":  {
+                                                         "tags":  [
+                                                                      "Feedback"
+                                                                  ],
+                                                         "parameters":  [
+                                                                            "@{name=id; in=path; required=True; schema=}"
+                                                                        ],
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     },
+                                             "put":  {
+                                                         "tags":  [
+                                                                      "Feedback"
+                                                                  ],
+                                                         "parameters":  [
+                                                                            "@{name=id; in=path; required=True; schema=}"
+                                                                        ],
+                                                         "requestBody":  {
+                                                                             "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                         },
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     },
+                                             "delete":  {
+                                                            "tags":  [
+                                                                         "Feedback"
+                                                                     ],
+                                                            "parameters":  [
+                                                                               "@{name=id; in=path; required=True; schema=}"
+                                                                           ],
+                                                            "responses":  {
+                                                                              "200":  "@{description=OK}"
+                                                                          }
+                                                        }
+                                         },
+                  "/api/Ingredient":  {
+                                          "get":  {
+                                                      "tags":  [
+                                                                   "Ingredient"
+                                                               ],
+                                                      "responses":  {
+                                                                        "200":  "@{description=OK}"
+                                                                    }
+                                                  },
+                                          "post":  {
+                                                       "tags":  [
+                                                                    "Ingredient"
+                                                                ],
+                                                       "requestBody":  {
+                                                                           "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                       },
+                                                       "responses":  {
+                                                                         "200":  "@{description=OK}"
+                                                                     }
+                                                   }
+                                      },
+                  "/api/Ingredient/{id}":  {
+                                               "get":  {
+                                                           "tags":  [
+                                                                        "Ingredient"
+                                                                    ],
+                                                           "parameters":  [
+                                                                              "@{name=id; in=path; required=True; schema=}"
+                                                                          ],
+                                                           "responses":  {
+                                                                             "200":  "@{description=OK}"
+                                                                         }
+                                                       },
+                                               "put":  {
+                                                           "tags":  [
+                                                                        "Ingredient"
+                                                                    ],
+                                                           "parameters":  [
+                                                                              "@{name=id; in=path; required=True; schema=}"
+                                                                          ],
+                                                           "requestBody":  {
+                                                                               "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                           },
+                                                           "responses":  {
+                                                                             "200":  "@{description=OK}"
+                                                                         }
+                                                       },
+                                               "delete":  {
+                                                              "tags":  [
+                                                                           "Ingredient"
+                                                                       ],
+                                                              "parameters":  [
+                                                                                 "@{name=id; in=path; required=True; schema=}"
+                                                                             ],
+                                                              "responses":  {
+                                                                                "200":  "@{description=OK}"
+                                                                            }
+                                                          }
+                                           },
+                  "/api/Media":  {
+                                     "post":  {
+                                                  "tags":  [
+                                                               "Media"
+                                                           ],
+                                                  "requestBody":  {
+                                                                      "content":  "@{multipart/form-data=}"
+                                                                  },
+                                                  "responses":  {
+                                                                    "200":  "@{description=OK}"
+                                                                }
+                                              }
+                                 },
+                  "/api/Recipe":  {
+                                      "get":  {
+                                                  "tags":  [
+                                                               "Recipe"
+                                                           ],
+                                                  "responses":  {
+                                                                    "200":  "@{description=OK}"
+                                                                }
+                                              },
+                                      "post":  {
+                                                   "tags":  [
+                                                                "Recipe"
+                                                            ],
+                                                   "requestBody":  {
+                                                                       "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                   },
+                                                   "responses":  {
+                                                                     "200":  "@{description=OK}"
+                                                                 }
+                                               }
+                                  },
+                  "/api/Recipe/{id}":  {
+                                           "get":  {
+                                                       "tags":  [
+                                                                    "Recipe"
+                                                                ],
+                                                       "parameters":  [
+                                                                          "@{name=id; in=path; required=True; schema=}"
+                                                                      ],
+                                                       "responses":  {
+                                                                         "200":  "@{description=OK}"
+                                                                     }
+                                                   },
+                                           "put":  {
+                                                       "tags":  [
+                                                                    "Recipe"
+                                                                ],
+                                                       "parameters":  [
+                                                                          "@{name=id; in=path; required=True; schema=}"
+                                                                      ],
+                                                       "requestBody":  {
+                                                                           "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                       },
+                                                       "responses":  {
+                                                                         "200":  "@{description=OK}"
+                                                                     }
+                                                   },
+                                           "delete":  {
+                                                          "tags":  [
+                                                                       "Recipe"
+                                                                   ],
+                                                          "parameters":  [
+                                                                             "@{name=id; in=path; required=True; schema=}"
+                                                                         ],
+                                                          "responses":  {
+                                                                            "200":  "@{description=OK}"
+                                                                        }
+                                                      }
+                                       },
+                  "/api/RecipeIngredient":  {
+                                                "get":  {
+                                                            "tags":  [
+                                                                         "RecipeIngredient"
+                                                                     ],
+                                                            "responses":  {
+                                                                              "200":  "@{description=OK}"
+                                                                          }
+                                                        },
+                                                "post":  {
+                                                             "tags":  [
+                                                                          "RecipeIngredient"
+                                                                      ],
+                                                             "requestBody":  {
+                                                                                 "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                             },
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK}"
+                                                                           }
+                                                         }
+                                            },
+                  "/api/RecipeIngredient/{id}":  {
+                                                     "get":  {
+                                                                 "tags":  [
+                                                                              "RecipeIngredient"
+                                                                          ],
+                                                                 "parameters":  [
+                                                                                    "@{name=id; in=path; required=True; schema=}"
+                                                                                ],
+                                                                 "responses":  {
+                                                                                   "200":  "@{description=OK}"
+                                                                               }
+                                                             },
+                                                     "put":  {
+                                                                 "tags":  [
+                                                                              "RecipeIngredient"
+                                                                          ],
+                                                                 "parameters":  [
+                                                                                    "@{name=id; in=path; required=True; schema=}"
+                                                                                ],
+                                                                 "requestBody":  {
+                                                                                     "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                                 },
+                                                                 "responses":  {
+                                                                                   "200":  "@{description=OK}"
+                                                                               }
+                                                             },
+                                                     "delete":  {
+                                                                    "tags":  [
+                                                                                 "RecipeIngredient"
+                                                                             ],
+                                                                    "parameters":  [
+                                                                                       "@{name=id; in=path; required=True; schema=}"
+                                                                                   ],
+                                                                    "responses":  {
+                                                                                      "200":  "@{description=OK}"
+                                                                                  }
+                                                                }
+                                                 },
+                  "/api/Role":  {
+                                    "get":  {
+                                                "tags":  [
+                                                             "Role"
+                                                         ],
+                                                "responses":  {
+                                                                  "200":  "@{description=OK; content=}"
+                                                              }
+                                            },
+                                    "post":  {
+                                                 "tags":  [
+                                                              "Role"
+                                                          ],
+                                                 "requestBody":  {
+                                                                     "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                 },
+                                                 "responses":  {
+                                                                   "200":  "@{description=OK; content=}"
+                                                               }
+                                             }
+                                },
+                  "/api/Role/{id}":  {
+                                         "get":  {
+                                                     "tags":  [
+                                                                  "Role"
+                                                              ],
+                                                     "parameters":  [
+                                                                        "@{name=id; in=path; required=True; schema=}"
+                                                                    ],
+                                                     "responses":  {
+                                                                       "200":  "@{description=OK; content=}"
+                                                                   }
+                                                 },
+                                         "put":  {
+                                                     "tags":  [
+                                                                  "Role"
+                                                              ],
+                                                     "parameters":  [
+                                                                        "@{name=id; in=path; required=True; schema=}"
+                                                                    ],
+                                                     "requestBody":  {
+                                                                         "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                     },
+                                                     "responses":  {
+                                                                       "200":  "@{description=OK; content=}"
+                                                                   }
+                                                 },
+                                         "delete":  {
+                                                        "tags":  [
+                                                                     "Role"
+                                                                 ],
+                                                        "parameters":  [
+                                                                           "@{name=id; in=path; required=True; schema=}"
+                                                                       ],
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK; content=}"
+                                                                      }
+                                                    }
+                                     },
+                  "/api/SiteFeedback":  {
+                                            "get":  {
+                                                        "tags":  [
+                                                                     "SiteFeedback"
+                                                                 ],
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK}"
+                                                                      }
+                                                    },
+                                            "post":  {
+                                                         "tags":  [
+                                                                      "SiteFeedback"
+                                                                  ],
+                                                         "requestBody":  {
+                                                                             "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                         },
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     }
+                                        },
+                  "/api/SiteFeedback/{id}":  {
+                                                 "get":  {
+                                                             "tags":  [
+                                                                          "SiteFeedback"
+                                                                      ],
+                                                             "parameters":  [
+                                                                                "@{name=id; in=path; required=True; schema=}"
+                                                                            ],
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK}"
+                                                                           }
+                                                         },
+                                                 "put":  {
+                                                             "tags":  [
+                                                                          "SiteFeedback"
+                                                                      ],
+                                                             "parameters":  [
+                                                                                "@{name=id; in=path; required=True; schema=}"
+                                                                            ],
+                                                             "requestBody":  {
+                                                                                 "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                             },
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK}"
+                                                                           }
+                                                         },
+                                                 "delete":  {
+                                                                "tags":  [
+                                                                             "SiteFeedback"
+                                                                         ],
+                                                                "parameters":  [
+                                                                                   "@{name=id; in=path; required=True; schema=}"
+                                                                               ],
+                                                                "responses":  {
+                                                                                  "200":  "@{description=OK}"
+                                                                              }
+                                                            }
+                                             },
+                  "/api/Subscription":  {
+                                            "get":  {
+                                                        "tags":  [
+                                                                     "Subscription"
+                                                                 ],
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK; content=}"
+                                                                      }
+                                                    },
+                                            "post":  {
+                                                         "tags":  [
+                                                                      "Subscription"
+                                                                  ],
+                                                         "requestBody":  {
+                                                                             "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                         },
+                                                         "responses":  {
+                                                                           "200":  "@{description=OK}"
+                                                                       }
+                                                     }
+                                        },
+                  "/api/Subscription/{id}":  {
+                                                 "get":  {
+                                                             "tags":  [
+                                                                          "Subscription"
+                                                                      ],
+                                                             "parameters":  [
+                                                                                "@{name=id; in=path; required=True; schema=}"
+                                                                            ],
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK; content=}"
+                                                                           }
+                                                         },
+                                                 "put":  {
+                                                             "tags":  [
+                                                                          "Subscription"
+                                                                      ],
+                                                             "parameters":  [
+                                                                                "@{name=id; in=path; required=True; schema=}"
+                                                                            ],
+                                                             "requestBody":  {
+                                                                                 "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                             },
+                                                             "responses":  {
+                                                                               "200":  "@{description=OK}"
+                                                                           }
+                                                         },
+                                                 "delete":  {
+                                                                "tags":  [
+                                                                             "Subscription"
+                                                                         ],
+                                                                "parameters":  [
+                                                                                   "@{name=id; in=path; required=True; schema=}"
+                                                                               ],
+                                                                "responses":  {
+                                                                                  "200":  "@{description=OK}"
+                                                                              }
+                                                            }
+                                             },
+                  "/api/Tip":  {
+                                   "get":  {
+                                               "tags":  [
+                                                            "Tip"
+                                                        ],
+                                               "responses":  {
+                                                                 "200":  "@{description=OK}"
+                                                             }
+                                           },
+                                   "post":  {
+                                                "tags":  [
+                                                             "Tip"
+                                                         ],
+                                                "requestBody":  {
+                                                                    "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                },
+                                                "responses":  {
+                                                                  "200":  "@{description=OK}"
+                                                              }
+                                            }
+                               },
+                  "/api/Tip/{id}":  {
+                                        "get":  {
+                                                    "tags":  [
+                                                                 "Tip"
+                                                             ],
+                                                    "parameters":  [
+                                                                       "@{name=id; in=path; required=True; schema=}"
+                                                                   ],
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK}"
+                                                                  }
+                                                },
+                                        "put":  {
+                                                    "tags":  [
+                                                                 "Tip"
+                                                             ],
+                                                    "parameters":  [
+                                                                       "@{name=id; in=path; required=True; schema=}"
+                                                                   ],
+                                                    "requestBody":  {
+                                                                        "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                    },
+                                                    "responses":  {
+                                                                      "200":  "@{description=OK}"
+                                                                  }
+                                                },
+                                        "delete":  {
+                                                       "tags":  [
+                                                                    "Tip"
+                                                                ],
+                                                       "parameters":  [
+                                                                          "@{name=id; in=path; required=True; schema=}"
+                                                                      ],
+                                                       "responses":  {
+                                                                         "200":  "@{description=OK}"
+                                                                     }
+                                                   }
+                                    },
+                  "/api/User":  {
+                                    "get":  {
+                                                "tags":  [
+                                                             "User"
+                                                         ],
+                                                "responses":  {
+                                                                  "200":  "@{description=OK}"
+                                                              }
+                                            },
+                                    "post":  {
+                                                 "tags":  [
+                                                              "User"
+                                                          ],
+                                                 "requestBody":  {
+                                                                     "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                 },
+                                                 "responses":  {
+                                                                   "200":  "@{description=OK}"
+                                                               }
+                                             }
+                                },
+                  "/api/User/{id}":  {
+                                         "get":  {
+                                                     "tags":  [
+                                                                  "User"
+                                                              ],
+                                                     "parameters":  [
+                                                                        "@{name=id; in=path; required=True; schema=}"
+                                                                    ],
+                                                     "responses":  {
+                                                                       "200":  "@{description=OK}"
+                                                                   }
+                                                 },
+                                         "put":  {
+                                                     "tags":  [
+                                                                  "User"
+                                                              ],
+                                                     "parameters":  [
+                                                                        "@{name=id; in=path; required=True; schema=}"
+                                                                    ],
+                                                     "requestBody":  {
+                                                                         "content":  "@{application/json=; text/json=; application/*+json=}"
+                                                                     },
+                                                     "responses":  {
+                                                                       "200":  "@{description=OK}"
+                                                                   }
+                                                 },
+                                         "delete":  {
+                                                        "tags":  [
+                                                                     "User"
+                                                                 ],
+                                                        "parameters":  [
+                                                                           "@{name=id; in=path; required=True; schema=}"
+                                                                       ],
+                                                        "responses":  {
+                                                                          "200":  "@{description=OK}"
+                                                                      }
+                                                    }
+                                     }
+              },
+    "components":  {
+                       "schemas":  {
+                                       "AnnouncementForCreation":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "title":  "@{type=string; nullable=True}",
+                                                                                          "description":  "@{type=string; nullable=True}",
+                                                                                          "contestId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                          "winnerSubmissionId":  "@{type=integer; format=int32; nullable=True}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   },
+                                       "AnnouncementForUpdation":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "id":  "@{type=integer; format=int32}",
+                                                                                          "title":  "@{type=string; nullable=True}",
+                                                                                          "description":  "@{type=string; nullable=True}",
+                                                                                          "contestId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                          "winnerSubmissionId":  "@{type=integer; format=int32; nullable=True}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   },
+                                       "CategoryForCreation":  {
+                                                                   "type":  "object",
+                                                                   "properties":  {
+                                                                                      "categoryName":  "@{type=string; nullable=True}",
+                                                                                      "profileImage":  "@{type=string; nullable=True}"
+                                                                                  },
+                                                                   "additionalProperties":  false
+                                                               },
+                                       "CategoryForListning":  {
+                                                                   "type":  "object",
+                                                                   "properties":  {
+                                                                                      "id":  "@{type=integer; format=int32}",
+                                                                                      "categoryName":  "@{type=string; nullable=True}",
+                                                                                      "profileImage":  "@{type=string; nullable=True}"
+                                                                                  },
+                                                                   "additionalProperties":  false
+                                                               },
+                                       "CategoryForUpdation":  {
+                                                                   "type":  "object",
+                                                                   "properties":  {
+                                                                                      "id":  "@{type=integer; format=int32}",
+                                                                                      "categoryName":  "@{type=string; nullable=True}",
+                                                                                      "profileImage":  "@{type=string; nullable=True}"
+                                                                                  },
+                                                                   "additionalProperties":  false
+                                                               },
+                                       "ContestForCreation":  {
+                                                                  "type":  "object",
+                                                                  "properties":  {
+                                                                                     "title":  "@{type=string; nullable=True}",
+                                                                                     "description":  "@{type=string; nullable=True}",
+                                                                                     "durationDays":  "@{type=integer; format=int32}",
+                                                                                     "profileImage":  "@{type=string; nullable=True}"
+                                                                                 },
+                                                                  "additionalProperties":  false
+                                                              },
+                                       "ContestForUpdation":  {
+                                                                  "type":  "object",
+                                                                  "properties":  {
+                                                                                     "id":  "@{type=integer; format=int32}",
+                                                                                     "title":  "@{type=string; nullable=True}",
+                                                                                     "description":  "@{type=string; nullable=True}",
+                                                                                     "durationDays":  "@{type=integer; format=int32}",
+                                                                                     "profileImage":  "@{type=string; nullable=True}"
+                                                                                 },
+                                                                  "additionalProperties":  false
+                                                              },
+                                       "ContestSubmissionDto":  {
+                                                                    "type":  "object",
+                                                                    "properties":  {
+                                                                                       "id":  "@{type=integer; format=int32}",
+                                                                                       "contestId":  "@{type=integer; format=int32}",
+                                                                                       "userId":  "@{type=integer; format=int32}",
+                                                                                       "recipeId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                       "tipId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                       "isWinner":  "@{type=boolean}",
+                                                                                       "submittedAt":  "@{type=string; format=date-time}"
+                                                                                   },
+                                                                    "additionalProperties":  false
+                                                                },
+                                       "ContestSubmissionForCreation":  {
+                                                                            "type":  "object",
+                                                                            "properties":  {
+                                                                                               "contestId":  "@{type=integer; format=int32}",
+                                                                                               "recipeId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                               "tipId":  "@{type=integer; format=int32; nullable=True}"
+                                                                                           },
+                                                                            "additionalProperties":  false
+                                                                        },
+                                       "ContestSubmissionForListning":  {
+                                                                            "type":  "object",
+                                                                            "properties":  {
+                                                                                               "id":  "@{type=integer; format=int32}",
+                                                                                               "contestId":  "@{type=integer; format=int32}",
+                                                                                               "userId":  "@{type=integer; format=int32}",
+                                                                                               "recipeId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                               "tipId":  "@{type=integer; format=int32; nullable=True}",
+                                                                                               "isWinner":  "@{type=boolean}",
+                                                                                               "submittedAt":  "@{type=string; format=date-time}"
+                                                                                           },
+                                                                            "additionalProperties":  false
+                                                                        },
+                                       "FeedbackForCreation":  {
+                                                                   "type":  "object",
+                                                                   "properties":  {
+                                                                                      "recipeId":  "@{type=integer; format=int32}",
+                                                                                      "comment":  "@{type=string; nullable=True}",
+                                                                                      "rating":  "@{type=integer; format=int32}"
+                                                                                  },
+                                                                   "additionalProperties":  false
+                                                               },
+                                       "FeedbackForUpdation":  {
+                                                                   "type":  "object",
+                                                                   "properties":  {
+                                                                                      "id":  "@{type=integer; format=int32}",
+                                                                                      "comment":  "@{type=string; nullable=True}",
+                                                                                      "rating":  "@{type=integer; format=int32}"
+                                                                                  },
+                                                                   "additionalProperties":  false
+                                                               },
+                                       "IngredientForCreation":  {
+                                                                     "type":  "object",
+                                                                     "properties":  {
+                                                                                        "name":  "@{type=string; nullable=True}",
+                                                                                        "profileImage":  "@{type=string; nullable=True}"
+                                                                                    },
+                                                                     "additionalProperties":  false
+                                                                 },
+                                       "IngredientForUpdation":  {
+                                                                     "type":  "object",
+                                                                     "properties":  {
+                                                                                        "id":  "@{type=integer; format=int32}",
+                                                                                        "name":  "@{type=string; nullable=True}",
+                                                                                        "profileImage":  "@{type=string; nullable=True}"
+                                                                                    },
+                                                                     "additionalProperties":  false
+                                                                 },
+                                       "LoginsRequest":  {
+                                                             "type":  "object",
+                                                             "properties":  {
+                                                                                "email":  "@{type=string; nullable=True}",
+                                                                                "password":  "@{type=string; nullable=True}"
+                                                                            },
+                                                             "additionalProperties":  false
+                                                         },
+                                       "PlanType":  {
+                                                        "enum":  [
+                                                                     "Weekly",
+                                                                     "Monthly",
+                                                                     "Yearly"
+                                                                 ],
+                                                        "type":  "string"
+                                                    },
+                                       "RecIngredientForCreation":  {
+                                                                        "type":  "object",
+                                                                        "properties":  {
+                                                                                           "recipeName":  "@{type=string; nullable=True}",
+                                                                                           "recipeitem":  "@{type=array; items=; nullable=True}"
+                                                                                       },
+                                                                        "additionalProperties":  false
+                                                                    },
+                                       "RecIngredientForUpdation":  {
+                                                                        "type":  "object",
+                                                                        "properties":  {
+                                                                                           "id":  "@{type=integer; format=int32}",
+                                                                                           "recipeName":  "@{type=string; nullable=True}",
+                                                                                           "ingredientName":  "@{type=string; nullable=True}",
+                                                                                           "quantity":  "@{type=string; nullable=True}",
+                                                                                           "profileImage":  "@{type=string; nullable=True}"
+                                                                                       },
+                                                                        "additionalProperties":  false
+                                                                    },
+                                       "RecipeActionType":  {
+                                                                "enum":  [
+                                                                             "User",
+                                                                             "Member",
+                                                                             "Both"
+                                                                         ],
+                                                                "type":  "string"
+                                                            },
+                                       "RecipeForCreation":  {
+                                                                 "type":  "object",
+                                                                 "properties":  {
+                                                                                    "title":  "@{type=string; nullable=True}",
+                                                                                    "description":  "@{type=string; nullable=True}",
+                                                                                    "isFree":  "@{type=boolean}",
+                                                                                    "procedure":  "@{type=string; nullable=True}",
+                                                                                    "actionType":  "@{$ref=#/components/schemas/RecipeActionType}",
+                                                                                    "categoryId":  "@{type=integer; format=int32}",
+                                                                                    "imagePaths":  "@{type=array; items=; nullable=True}"
+                                                                                },
+                                                                 "additionalProperties":  false
+                                                             },
+                                       "RecipeForUpdation":  {
+                                                                 "type":  "object",
+                                                                 "properties":  {
+                                                                                    "id":  "@{type=integer; format=int32}",
+                                                                                    "title":  "@{type=string; nullable=True}",
+                                                                                    "isFree":  "@{type=boolean}",
+                                                                                    "description":  "@{type=string; nullable=True}",
+                                                                                    "procedure":  "@{type=string; nullable=True}",
+                                                                                    "actionType":  "@{$ref=#/components/schemas/RecipeActionType}",
+                                                                                    "categoryId":  "@{type=integer; format=int32}",
+                                                                                    "imagePaths":  "@{type=array; items=; nullable=True}"
+                                                                                },
+                                                                 "additionalProperties":  false
+                                                             },
+                                       "RecipeIngredientItemForCreation":  {
+                                                                               "type":  "object",
+                                                                               "properties":  {
+                                                                                                  "ingredientName":  "@{type=string; nullable=True}",
+                                                                                                  "quantity":  "@{type=string; nullable=True}",
+                                                                                                  "profileImage":  "@{type=string; nullable=True}"
+                                                                                              },
+                                                                               "additionalProperties":  false
+                                                                           },
+                                       "RoleDto":  {
+                                                       "type":  "object",
+                                                       "properties":  {
+                                                                          "id":  "@{type=integer; format=int32}",
+                                                                          "roleName":  "@{type=string; nullable=True}"
+                                                                      },
+                                                       "additionalProperties":  false
+                                                   },
+                                       "RoleForCreation":  {
+                                                               "type":  "object",
+                                                               "properties":  {
+                                                                                  "roleName":  "@{type=string; nullable=True}"
+                                                                              },
+                                                               "additionalProperties":  false
+                                                           },
+                                       "RoleForListning":  {
+                                                               "type":  "object",
+                                                               "properties":  {
+                                                                                  "id":  "@{type=integer; format=int32}",
+                                                                                  "roleName":  "@{type=string; nullable=True}"
+                                                                              },
+                                                               "additionalProperties":  false
+                                                           },
+                                       "RoleForUpdation":  {
+                                                               "type":  "object",
+                                                               "properties":  {
+                                                                                  "id":  "@{type=integer; format=int32}",
+                                                                                  "roleName":  "@{type=string; nullable=True}"
+                                                                              },
+                                                               "additionalProperties":  false
+                                                           },
+                                       "SubscriptionDto":  {
+                                                               "type":  "object",
+                                                               "properties":  {
+                                                                                  "id":  "@{type=integer; format=int32}",
+                                                                                  "userId":  "@{type=integer; format=int32}",
+                                                                                  "planType":  "@{$ref=#/components/schemas/PlanType}",
+                                                                                  "amount":  "@{type=number; format=double}",
+                                                                                  "startDate":  "@{type=string; format=date-time}",
+                                                                                  "endDate":  "@{type=string; format=date-time}",
+                                                                                  "status":  "@{$ref=#/components/schemas/SubscriptionStatus}"
+                                                                              },
+                                                               "additionalProperties":  false
+                                                           },
+                                       "SubscriptionForCreation":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "userId":  "@{type=integer; format=int32}",
+                                                                                          "planType":  "@{$ref=#/components/schemas/PlanType}",
+                                                                                          "amount":  "@{type=number; format=double}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   },
+                                       "SubscriptionForListning":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "id":  "@{type=integer; format=int32}",
+                                                                                          "userId":  "@{type=integer; format=int32}",
+                                                                                          "planType":  "@{$ref=#/components/schemas/PlanType}",
+                                                                                          "amount":  "@{type=number; format=double}",
+                                                                                          "startDate":  "@{type=string; format=date-time}",
+                                                                                          "endDate":  "@{type=string; format=date-time}",
+                                                                                          "status":  "@{$ref=#/components/schemas/SubscriptionStatus}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   },
+                                       "SubscriptionForUpdation":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "planType":  "@{$ref=#/components/schemas/PlanType}",
+                                                                                          "amount":  "@{type=number; format=double}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   },
+                                       "SubscriptionStatus":  {
+                                                                  "enum":  [
+                                                                               "Active",
+                                                                               "Expired",
+                                                                               "Cancelled"
+                                                                           ],
+                                                                  "type":  "string"
+                                                              },
+                                       "TipForCreation":  {
+                                                              "type":  "object",
+                                                              "properties":  {
+                                                                                 "title":  "@{type=string; nullable=True}",
+                                                                                 "description":  "@{type=string; nullable=True}",
+                                                                                 "isFree":  "@{type=boolean}",
+                                                                                 "actionType":  "@{$ref=#/components/schemas/RecipeActionType}",
+                                                                                 "profileImage":  "@{type=string; nullable=True}"
+                                                                             },
+                                                              "additionalProperties":  false
+                                                          },
+                                       "TipForUpdation":  {
+                                                              "type":  "object",
+                                                              "properties":  {
+                                                                                 "id":  "@{type=integer; format=int32}",
+                                                                                 "title":  "@{type=string; nullable=True}",
+                                                                                 "description":  "@{type=string; nullable=True}",
+                                                                                 "isFree":  "@{type=boolean}",
+                                                                                 "actionType":  "@{$ref=#/components/schemas/RecipeActionType}",
+                                                                                 "createdById":  "@{type=integer; format=int32}",
+                                                                                 "profileImage":  "@{type=string; nullable=True}"
+                                                                             },
+                                                              "additionalProperties":  false
+                                                          },
+                                       "UserForCreation":  {
+                                                               "type":  "object",
+                                                               "properties":  {
+                                                                                  "name":  "@{type=string; nullable=True}",
+                                                                                  "email":  "@{type=string; nullable=True}",
+                                                                                  "password":  "@{type=string; nullable=True}",
+                                                                                  "profileImage":  "@{type=string; nullable=True}"
+                                                                              },
+                                                               "additionalProperties":  false
+                                                           },
+                                       "UserForUpdation":  {
+                                                               "type":  "object",
+                                                               "properties":  {
+                                                                                  "id":  "@{type=integer; format=int32}",
+                                                                                  "name":  "@{type=string; nullable=True}",
+                                                                                  "email":  "@{type=string; nullable=True}",
+                                                                                  "password":  "@{type=string; nullable=True}",
+                                                                                  "profileImage":  "@{type=string; nullable=True}"
+                                                                              },
+                                                               "additionalProperties":  false
+                                                           },
+                                       "faqForCreation":  {
+                                                              "type":  "object",
+                                                              "properties":  {
+                                                                                 "question":  "@{type=string; nullable=True}",
+                                                                                 "answer":  "@{type=string; nullable=True}"
+                                                                             },
+                                                              "additionalProperties":  false
+                                                          },
+                                       "faqForUpdation":  {
+                                                              "type":  "object",
+                                                              "properties":  {
+                                                                                 "id":  "@{type=integer; format=int32}",
+                                                                                 "question":  "@{type=string; nullable=True}",
+                                                                                 "answer":  "@{type=string; nullable=True}"
+                                                                             },
+                                                              "additionalProperties":  false
+                                                          },
+                                       "sitefeedbackForCreation":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "comment":  "@{type=string; nullable=True}",
+                                                                                          "rating":  "@{type=integer; format=int32}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   },
+                                       "sitefeedbackForUpdation":  {
+                                                                       "type":  "object",
+                                                                       "properties":  {
+                                                                                          "id":  "@{type=integer; format=int32}",
+                                                                                          "comment":  "@{type=string; nullable=True}",
+                                                                                          "rating":  "@{type=integer; format=int32}"
+                                                                                      },
+                                                                       "additionalProperties":  false
+                                                                   }
+                                   },
+                       "securitySchemes":  {
+                                               "Bearer":  {
+                                                              "type":  "http",
+                                                              "description":  "Enter your JWT token.",
+                                                              "scheme":  "bearer",
+                                                              "bearerFormat":  "JWT"
+                                                          }
+                                           }
+                   },
+    "security":  [
+                     {
+                         "Bearer":  [
+
+                                    ]
+                     }
+                 ],
+    "tags":  [
+                 {
+                     "name":  "Announcement"
+                 },
+                 {
+                     "name":  "Auth"
+                 },
+                 {
+                     "name":  "Category"
+                 },
+                 {
+                     "name":  "Contest"
+                 },
+                 {
+                     "name":  "ContestSubmission"
+                 },
+                 {
+                     "name":  "FAQ"
+                 },
+                 {
+                     "name":  "Feedback"
+                 },
+                 {
+                     "name":  "Ingredient"
+                 },
+                 {
+                     "name":  "Media"
+                 },
+                 {
+                     "name":  "Recipe"
+                 },
+                 {
+                     "name":  "RecipeIngredient"
+                 },
+                 {
+                     "name":  "Role"
+                 },
+                 {
+                     "name":  "SiteFeedback"
+                 },
+                 {
+                     "name":  "Subscription"
+                 },
+                 {
+                     "name":  "Tip"
+                 },
+                 {
+                     "name":  "User"
+                 }
+             ]
+}
